@@ -1,0 +1,75 @@
+body {
+    font-family: Verdana;
+    font-size: small;
+    font-weight: normal;
+}
+.caixa {
+    margin-left:4%;
+    margin-top:2%;
+    background-color:lightsteelblue;
+    width:60%;
+    padding-left:5%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border: 1px solid #333;
+    border-radius: 4px;
+}
+.larguraInterna {
+    width:92%;
+}
+.botao {
+    margin-right: 2ch;
+    margin-bottom: 1ch;
+    min-width: 30ch;
+    font-weight: bold;
+}
+.textoNormal {
+    color: black;
+    font-weight: normal; 
+}
+.textoDestacado {
+    color: red;
+    font-weight: bold;
+}
+.listaParagrafos {
+  width: 90%;
+  margin: 0;
+  margin-top: 2ch;
+  padding: 0px;
+  padding-bottom: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  min-height: 4ch;
+  background-color: white;
+}
+#cabecalhoLista {
+    margin-top:-15px;
+    margin-left:5%;
+    padding-top: 5px;
+    padding-bottom:5px;
+    background-color:darkgray;
+    color:white;
+    width:90%;
+    font-weight:bold; 
+    text-align:center;
+    border: 1px solid #333;
+    border-radius: 4px;
+}
+.paragrafo {
+    color: black;
+    font-weight: normal;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left:8px;
+    margin-right: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.par {
+    background-color: #aad2f6; 
+}
+.impar {
+    background-color: #E4F2FF; 
+}

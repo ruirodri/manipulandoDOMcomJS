@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Manipulando DOM com Javascript</title>
+    <link rel="stylesheet" type="text/css" href="exemplo.css">
+    <script src="exemplo.js"></script>
+</head>
+
+<body>
+    <div id="inputDeTexto" class="caixa">
+        <label> Área de input:<br />
+            <input type="text" class="larguraInterna" id="textoInformado" value=""></input>
+        </label>
+        <br />
+        <br />
+        <input type="button" class="botao" value="Mostra o texto no input" onclick="mostraValor()">
+        <input type="button" class="botao" value="Limpa o texto" onclick="limpaInput()">
+        <br />
+        <input type="button" class="botao" value='Adiciona "Oi" no texto' onclick="escreveMaisOi()">
+        <input type="button" class="botao" value='Pede texto' onclick="pedeTexto()">
+        <div class="larguraInterna">Aqui lidamos com manipulação de texto e de áreas de input.</div>
+    </div>
+
+    <div id="manipulandoElementos" class="caixa">
+        <input type="button" class="botao" id="adicParagrafo" value="Adiciona parágrafo" onclick="adicionaParagrafo()">
+        <input type="button" class="botao" id="delParagrafo" value="Remove parágrafo" onclick="removeParagrafo()">
+
+        <div id="listaParagrafos" class="listaParagrafos">
+            <div id="cabecalhoLista">Aqui temos uma lista de parágrafos </div>
+        </div>
+        <br />
+        <div class="larguraInterna">Aqui adicionamos e removemos componentes dinamicamente. Caso haja texto ná área de
+            input acima, este será utilizado para a criação do parágrafo. Se não houver, o texto "Parágrafo novo" será
+            utilizado.</div>
+    </div>
+
+    <div id="manipulandoFormatacao" class="caixa">
+        <input type="button" class="botao" id="botaoTextoNormal" value="Texto Normal" disabled=true
+            onclick="mostraTextoNormal()">
+        <input type="button" class="botao" id="botaoTextoDestacado" value="Texto Destacado"
+            onclick="mostraTextoDestacado()">
+        <p class="textoNormal" style="background-color: white; width: 90%;padding-top:2px;padding-bottom:2px;"
+            id="exemploTexto">Exemplo de texto sendo formatado dinamicamente</p>
+        <div class="larguraInterna">Aqui tratamos dinamicamente a formatação de textos, a habilitação e desabilitação de
+            componentes de tela.</div>
+    </div>
+
+    <div id="acoesDiversas" class="caixa">
+        <input type="button" class="botao" value="Simula click" onclick="makeClick()">
+        <input type="button" class="botao" id="botaoAbreSite" value="Abre site da everis" onclick="abreSiteEveris()">
+        <br />
+        <input type="button" class="botao" id="botaoScroll" value="Faz scroll para baixo"
+            onclick="scrollToBotaoVoltaListaParagrafos()">
+        <input type="checkbox" id="checkDummy">
+        <label for="checkDummy">Para click automatizado</label>
+        <div class="larguraInterna">Algumas ações comumente executadas via Javascript em processos de automação. Para
+            mais dados sobre a integração do Javascript com Selenium, verifique <a
+                href="https://www.guru99.com/execute-javascript-selenium-webdriver.html">aqui</a>.</div>
+    </div>
+
+    <div id="linhasDeTexto" class="caixa">
+        <div class="larguraInterna">
+            Múltiplas linhas de texto para gerar scroll na página. <br />
+            <br />
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+            atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique
+            sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum
+            facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+            impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor
+            repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et
+            voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus,
+            ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+            <br />
+            <br />
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+            atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique
+            sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum
+            facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+            impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor
+            repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et
+            voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus,
+            ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+            <br />
+            <br />
+        </div>
+        <input type="button" class="botao" id="botaoListaParagrafos" value="Volta à lista de parágrafos"
+            onclick="scrollToParagraphList()">
+        <input type="button" class="botao" id="botaoScrollUp" value="Sobe 50 pixels" onclick="scrollUp50()">
+    </div>
+    <br />
+    <br />
+</body>
+
+</html>
